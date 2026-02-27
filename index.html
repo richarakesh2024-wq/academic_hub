@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AcademicHub — Share & Discover Academic Resources</title>
+  <meta name="description" content="A community platform for students to upload, search, rate, and download academic resources by university, department, and course." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="src/styles/index.css" />
+  <link rel="stylesheet" href="src/styles/components.css" />
+  <link rel="stylesheet" href="src/styles/pages.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav id="main-nav" class="navbar">
+    <div class="nav-container">
+      <a href="#/" class="nav-logo">
+        <span class="logo-icon">📚</span>
+        <span class="logo-text">Academic<span class="logo-accent">Hub</span></span>
+      </a>
+      <div class="nav-links" id="nav-links">
+        <a href="#/" class="nav-link" data-route="/">Home</a>
+        <a href="#/browse" class="nav-link" data-route="/browse">Browse</a>
+        <a href="#/upload" class="nav-link" data-route="/upload">Upload</a>
+        <a href="#/collaborate" class="nav-link" data-route="/collaborate">Collaborate</a>
+        <a href="#/dashboard" class="nav-link" data-route="/dashboard">Dashboard</a>
+      </div>
+      <div class="nav-actions" id="nav-actions">
+        <!-- Populated by JS -->
+      </div>
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main id="app" class="app-main"></main>
+
+  <!-- Toast Container -->
+  <div id="toast-container" class="toast-container"></div>
+
+  <!-- Modal Container -->
+  <div id="modal-overlay" class="modal-overlay hidden">
+    <div class="modal-content" id="modal-content"></div>
+  </div>
+
+  <script src="src/utils/helpers.js"></script>
+  <script src="src/store.js"></script>
+  <script src="src/utils/seed-data.js"></script>
+  <script src="src/components/navbar.js"></script>
+  <script src="src/components/modal.js"></script>
+  <script src="src/components/star-rating.js"></script>
+  <script src="src/components/search-bar.js"></script>
+  <script src="src/components/resource-card.js"></script>
+  <script src="src/components/comment-thread.js"></script>
+  <script src="src/components/markdown-viewer.js"></script>
+  <script src="src/pages/landing.js"></script>
+  <script src="src/pages/auth.js"></script>
+  <script src="src/pages/browse.js"></script>
+  <script src="src/pages/resource-detail.js"></script>
+  <script src="src/pages/upload.js"></script>
+  <script src="src/pages/dashboard.js"></script>
+  <script src="src/pages/collaboration.js"></script>
+  <script src="src/router.js"></script>
+  <script src="src/main.js"></script>
+</body>
+</html>
